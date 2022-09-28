@@ -1,0 +1,27 @@
+<h1>{{title}}</h1>
+
+<div class="form">
+    <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+    <label for="formName">FirstName</label>
+    <input type="text" placeholder="Name" formControlName="firstName" #userName>
+    <span style= "color: red;"*ngIf="firstName && firstName.invalid && firstName.touched
+    ">This input is not valid</span>
+
+    <br><br>
+
+    <label for="formemail">e-mail</label>
+    <input type="text" placeholder="email" formControlName="email" #email>
+    <!--<span style= "color: red;"*ngIf="email && email.invalid && email.touched
+    ">This input is not valid</span>-->
+    <br><br>
+    
+    <label for="formPassword">Password</label>
+    <input type="text" placeholder="password" formControlName="password" #password>
+    <!--<span style= "color: red;"*ngIf="password && password.invalid 
+    ">This input is not valid</span>-->
+    <br><br>
+
+    <button (click)="getData(userName.value,email.value,password.value)" 
+    [disabled]="reactiveForm.invalid">Send</button>
+</form>
+</div>

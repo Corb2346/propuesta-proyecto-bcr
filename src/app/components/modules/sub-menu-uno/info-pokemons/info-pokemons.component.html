@@ -1,0 +1,37 @@
+
+<h1>{{title}}</h1>
+<br><br>
+
+<div class="container">
+
+    <h3> Select the name of your Pokemon: </h3>
+<input type="text" id="name" name="name" [(ngModel)]="name" placeholder="Search Pokemon by name">
+<br>
+<br>
+
+<button id="btnSearch">Search</button> 
+
+      <h3> Or Select the type of your pokemon</h3>
+      <select (change)="typePkm($event)">
+          <option value="default">---------</option>
+          <option *ngFor="let type of typePokemon" [value]="type" >
+              {{type}}
+          </option>
+      </select>
+        
+      <p>You selected {{selectedType}}</p> 
+      
+      <span #typeSelect id="textoColor" colorDinamico > aca se muestra un recuadro con el color seleccionado con el viewchild</span>
+      
+      <br><br>
+     
+      <br><br>
+
+      <div *ngIf="mostrar" >
+      <span> pipe creado por {{ 'mi' | uppercase }} </span>
+      </div>
+
+      <button (click)="showPipe()">ShowPipe</button>
+
+    </div>
+     

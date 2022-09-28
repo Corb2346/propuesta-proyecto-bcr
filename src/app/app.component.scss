@@ -1,0 +1,37 @@
+.boxStyle{
+    display: inline-block;
+    border:3px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 2px 5px #888888;
+    margin-left:70px ;
+    font-size: 20px;
+}
+
+div{
+    margin:50px 0 0 150px ;
+    border: 2px solid rgb(197, 197, 197);
+    box-shadow: 5px 10px #888888;
+    display: inline-block;
+    background-color: #e7e7e7;
+    height: 150px;
+}
+
+div input{
+    padding: 8px;
+    margin: 10px;
+    border: 2px solid rgb(188, 188, 188);
+    background-color: #f9f9f9;
+}
+
+div button{
+
+    margin-left: 70px;
+    margin-top: 4px;
+    width: 75px;
+    height: 25px;
+}
+
+nav{
+    
+}

@@ -1,0 +1,37 @@
+h1{
+    display: inline-block;
+    border: 2px solid rgb(119, 119, 119);
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.container{
+    height: 550px;
+    border: 2px solid rgb(119, 119, 119);
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    display: inline-block;
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    margin: 50px 0 50px 50px;
+}
+input{
+    border: 2px dotted gray;
+    border-radius: 3px;
+    margin-left: 120px;
+    width: 180px;
+    height: 25px;
+}
+
+button{
+    width: 100px;
+    margin-left:160px ;
+    background-color: rgb(172, 251, 172);
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+}
+
+
